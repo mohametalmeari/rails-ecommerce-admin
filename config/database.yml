@@ -81,6 +81,7 @@ test:
 #
 production:
   <<: *default
-  database: rails_ecommerce_admin_production
-  username: rails_ecommerce_admin
-  password: <%= ENV["RAILS_ECOMMERCE_ADMIN_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
+  # database: rails_ecommerce_admin_production
+  # username: rails_ecommerce_admin
+  # password: <%= ENV["RAILS_ECOMMERCE_ADMIN_DATABASE_PASSWORD"] %>
